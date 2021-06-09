@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accessories - Painful Lessons</title>
+    <meta name="description" content="Page description goes here">
+    <link rel="icon" href="images/icons/icon-logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $(".toggle").on("click", function() {
+          if($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+          }
+          else {
+            $(".item").addClass("active");
+          }
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <!-- The page content goes here -->
+    <header>
+      <div class='announcement'>
+        <h1>Announce something here</h1>
+      </div>
+      <div class='search-cart'>
+        <img align='left' class='search' src='images/home/search.png' />
+        <img align='right'class='cart' src='images/home/cart.png' />
+      </div>
+      <div class='logo'>
+        <a href='index.html'>
+          <img src='images/home/logo.png' />
+        </a>
+      </div>
+    </header>
+
+    <main> <!-- Start main content grid -->
+      <div class='mainContent'>
+        <div class='leftPage'>
+          <nav>
+            <ul class='menu'>
+              <li class='item'><a href="index.html">Home</a></li>
+              <li class='item'><a href="#">Accessories</a></li>
+              <li class='item'><a href="shirts.html">T-Shirts</a></li>
+              <li class='item'><a href="hoodies.html">Hoodies</a></li>
+              <li class='item'><a href="shorts.html">Shorts</a></li>
+              <div class='toggleButton'>
+                <li class="toggle"><span class="bars"></span></li>
+              </div>
+              <div class='icons'>
+                <li class='item'><a href='https://m.facebook.com/jake.state.7965'><img src='images/icons/facebook.png'></a></li>
+                <li class='item'><a href='https://www.instagram.com/painfullessonsohio/'><img src='images/icons/instagram.png'></a></li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+        <div class="rightPage">
+          <div class='pageDescription'>
+            <h2>Home > Accessories</h2>
+            <p>Accessories</p>
+          </div>
+          <div class='container1 container1-Clothes'>
+            <p>Sorry, there are no products in this collection.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer> <!-- Footer Section -->
+      <div class='footer'>
+        <div class='policies-subscribe'>
+          <div class='policies'>
+            <h3>Our Policies</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+            </ul>
+          </div>
+          <div class='subscribe'>
+            <h3>Be in the know</h3>
+            <h3>Promotions, new products and sales. Directly to your inbox.</h3>
+            <form action='action_page/php'>
+            <input type='text' placeholder='Your email' name='mail'>
+            <input type='submit' value='Subscribe'>
+            </form>
+          </div>
+        </div>
+        <div class='copyrights'>
+          <p>Copyright © 2021, Painful Lessons. Powered by Shopify</p>
+          <img src='images/footer/payment_methods.png' />
+        </div>
+      </div>
+    </footer>
+    <!-- Add your stylesheet here, before the closing HTML tag -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  </body>
+</html>
